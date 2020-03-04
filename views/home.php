@@ -1,3 +1,12 @@
+<?php
+
+use App\Entity\Product;
+use App\Repository\ProductRepository;
+
+$productRepository = new ProductRepository();
+$products = $productRepository->get();
+
+?>
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -8,11 +17,15 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-4 product">
-            <img class="img-thumbnail" src="public/img/1.jpg" alt="">
-            <h3>Lemon</h3>
-            <p>description</p>
-        </div>
+        <?php
+        /** @var Product $product */
+        foreach($products as $product): ?>
+            <div class="col-md-4 product">
+                <img class="img-thumbnail" src="<?= $product->getSrc() ?>" alt="<?= $product->getAlt() ?>">
+                <h3><?= $product->getProduct() ?></h3>
+                <p><?= $product->getDescription() ?></p>
+            </div>
+        <?php endforeach; ?>
     </div>
 
     <div class="row comments">
