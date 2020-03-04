@@ -6,25 +6,31 @@ use PDO;
 
 class Database
 {
-    private static $connection = null;
+    private static $instance = null;
     private $host = 'localhost';
     private $dbName = 'citrus';
     private $username = 'root';
     private $password = '';
+    private $connection;
 
     private function __construct()
     {
-        self::$connection = new PDO('mysql:host=' . $this->host . ';' . 'dbname=' . $this->dbName, $this->username,
+        $this->connection = new PDO('mysql:host=' . $this->host . ';' . 'dbname=' . $this->dbName, $this->username,
         $this->password);
     }
 
-    public static function getConnection()
+    public static function getInstance()
     {
-        if(self::$connection)
+        if(self::$instance)
         {
-            return self::$connection;
+            return self::$instance;
         }
-        self::$connection = new Database();
-        return self::$connection;
+        self::$instance = new Database();
+        return self::$instance;
+    }
+
+    public function getConnection()
+    {
+        return $this->connection;
     }
 }
