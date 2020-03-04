@@ -15,7 +15,7 @@ class CommentRepository implements RepositoryInterface
     {
         $connection = Database::getInstance();
         $connection = $connection->getConnection();
-        $statement = $connection->query("SELECT * FROM $this->table");
+        $statement = $connection->query("SELECT * FROM $this->table WHERE approved = 1");
         $comments = $statement->fetchAll(PDO::FETCH_CLASS, Comment::class);
         return $comments;
     }
