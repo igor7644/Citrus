@@ -19,7 +19,7 @@ class Database
         $this->password);
     }
 
-    public static function getInsance()
+    public static function getInstance()
     {
         if(self::$instance)
         {
