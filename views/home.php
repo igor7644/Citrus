@@ -1,10 +1,14 @@
 <?php
 
 use App\Entity\Product;
+use App\Entity\Comment;
 use App\Repository\ProductRepository;
+use App\Repository\CommentRepository;
 
 $productRepository = new ProductRepository();
 $products = $productRepository->get();
+$commentRepository = new CommentRepository();
+$comments = $commentRepository->get();
 
 ?>
 <html>
@@ -15,6 +19,12 @@ $products = $productRepository->get();
 <body>
 
 <div class="container">
+
+    <div class="row">
+        <div class="col-md-12 page-button">
+            <a class="btn btn-dark" href="index.php?page=admin" role="button">ADMIN</a>
+        </div>
+    </div>
 
     <div class="row">
         <?php
@@ -30,7 +40,11 @@ $products = $productRepository->get();
 
     <div class="row comments">
         <div class="col-md-8 offset-md-2">
-            <p><b>Igoritza:</b> I love citrus!</p>
+            <?php
+            /** @var Comment $comment */
+            foreach($comments as $comment): ?>
+                <p><b><?= $comment->getName() ?>:</b> <?= $comment->getComment() ?></p>
+            <?php endforeach; ?>
         </div>
     </div>
 
