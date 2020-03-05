@@ -19,4 +19,13 @@ class CommentRepository implements RepositoryInterface
         $comments = $statement->fetchAll(PDO::FETCH_CLASS, Comment::class);
         return $comments;
     }
+
+    public function getUnapproved()
+    {
+        $connection = Database::getInstance();
+        $connection = $connection->getConnection();
+        $statement = $connection->query("SELECT * FROM $this->table");
+        $comments = $statement->fetchAll(PDO::FETCH_CLASS, Comment::class);
+        return $comments;
+    }
 }
