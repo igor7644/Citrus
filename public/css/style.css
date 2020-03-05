@@ -10,9 +10,33 @@
 .product h3,p{
     text-align: center;
 }
+.product{
+    margin-top: 30px;
+}
 .comments{
     margin-top: 50px;
 }
 .input-form{
     margin-top: 50px;
+}
+.page-button{
+    text-align: center;
+    margin-top: 50px;
+}
+.admin{
+    margin-top: 70px;
+}
+.admin-comments{
+    padding: 20px;
+}
+.admin-comments form{
+    text-align: center;
+}
+hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 70%;
+    background-color: #ccc;
+    height: 1px;
 }
