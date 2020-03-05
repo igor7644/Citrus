@@ -37,4 +37,15 @@ class CommentRepository implements RepositoryInterface
         $statement->bindParam(":id", $comment);
         $statement->execute();
     }
+
+    public function store($data)
+    {
+        $connection = Database::getInstance();
+        $connection = $connection->getConnection();
+        $statement = $connection->prepare("INSERT INTO $this->table (name, email, comment) VALUES (:name, :email, :comment)");
+        $statement->bindParam(':name', $data['name']);
+        $statement->bindParam(':email', $data['email']);
+        $statement->bindParam(':comment', $data['comment']);
+        $statement->execute();
+    }
 }
