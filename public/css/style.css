@@ -28,6 +28,7 @@
 }
 .admin-comments{
     padding: 20px;
+    text-align: center;
 }
 .admin-comments form{
     text-align: center;
@@ -39,4 +40,13 @@ hr{
     width: 70%;
     background-color: #ccc;
     height: 1px;
+}
+.comments h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.comments p{
+    padding: 10px;
+    margin-top: 30px;
+    background-color: bisque;
 }
