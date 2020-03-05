@@ -29,8 +29,9 @@ $comments = $commentRepository->getUnapproved();
         foreach($comments as $comment): ?>
             <div class="col-md-8 offset-md-2 admin-comments">
                 <p><b><?= $comment->getName() ?>:</b> <?= $comment->getComment() ?></p>
-                <form action="">
-                    <button type="button" class="btn btn-success">Approve</button>
+                <form action="core/Form/ApproveComment.php" method="post">
+                    <input type="hidden" name="commentId" value="<?= $comment->getId() ?>">
+                    <button type="submit" class="btn btn-success">Approve</button>
                 </form>
             </div> <hr>
         <?php endforeach; ?>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fc04512-0eba-4129-80a1-98e17ae53963" name="Default Changelist" comment="database singleton">
+    <list default="true" id="8fc04512-0eba-4129-80a1-98e17ae53963" name="Default Changelist" comment="comment repository get all">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Repository/CommentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +13,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>C:\xampp\htdocs\Citrus\composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -37,6 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
   </component>
   <component name="RecentsManager">
@@ -66,7 +70,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583313892954</updated>
-      <workItem from="1583313905865" duration="15713000" />
+      <workItem from="1583313905865" duration="22321000" />
+      <workItem from="1583399684621" duration="7232000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1583351431589</created>
@@ -96,7 +101,119 @@
       <option name="project" value="LOCAL" />
       <updated>1583351600200</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="abstract repository">
+      <created>1583352524036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583352524036</updated>
+    </task>
+    <task id="LOCAL-00006" summary="repository interface">
+      <created>1583352773385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583352773385</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor database class">
+      <created>1583353162299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583353162299</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor database class">
+      <created>1583355932620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583355932620</updated>
+    </task>
+    <task id="LOCAL-00009" summary="showed all products">
+      <created>1583355980655</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583355980655</updated>
+    </task>
+    <task id="LOCAL-00010" summary="comment and product entities">
+      <created>1583356065378</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583356065378</updated>
+    </task>
+    <task id="LOCAL-00011" summary="comment and product repositories">
+      <created>1583356117858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583356117858</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor style">
+      <created>1583356140942</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1583356140942</updated>
+    </task>
+    <task id="LOCAL-00013" summary="comment repository get all">
+      <created>1583365505026</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1583365505026</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor get all method">
+      <created>1583366300637</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583366300637</updated>
+    </task>
+    <task id="LOCAL-00015" summary="get unapproved comments">
+      <created>1583402324762</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583402324762</updated>
+    </task>
+    <task id="LOCAL-00016" summary="switch pages">
+      <created>1583402385983</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583402385983</updated>
+    </task>
+    <task id="LOCAL-00017" summary="admin page show comments">
+      <created>1583402421702</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1583402421702</updated>
+    </task>
+    <task id="LOCAL-00018" summary="home page show comments and admin link">
+      <created>1583402470809</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1583402470809</updated>
+    </task>
+    <task id="LOCAL-00019" summary="styled pages">
+      <created>1583402505317</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583402505317</updated>
+    </task>
+    <task id="LOCAL-00020" summary="changed get comments query">
+      <created>1583403411995</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1583403411995</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +224,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -118,6 +237,21 @@
     <MESSAGE value="added images and css" />
     <MESSAGE value="added home view and admin view" />
     <MESSAGE value="database singleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="database singleton" />
+    <MESSAGE value="abstract repository" />
+    <MESSAGE value="repository interface" />
+    <MESSAGE value="refactor database class" />
+    <MESSAGE value="showed all products" />
+    <MESSAGE value="comment and product entities" />
+    <MESSAGE value="comment and product repositories" />
+    <MESSAGE value="refactor style" />
+    <MESSAGE value="comment repository get all" />
+    <MESSAGE value="refactor get all method" />
+    <MESSAGE value="get unapproved comments" />
+    <MESSAGE value="switch pages" />
+    <MESSAGE value="admin page show comments" />
+    <MESSAGE value="home page show comments and admin link" />
+    <MESSAGE value="styled pages" />
+    <MESSAGE value="changed get comments query" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed get comments query" />
   </component>
 </project>

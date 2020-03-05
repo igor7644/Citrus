@@ -28,4 +28,13 @@ class CommentRepository implements RepositoryInterface
         $comments = $statement->fetchAll(PDO::FETCH_CLASS, Comment::class);
         return $comments;
     }
+
+    public function approve($comment)
+    {
+        $connection = Database::getInstance();
+        $connection = $connection->getConnection();
+        $statement = $connection->prepare("UPDATE $this->table SET approved = true where id = :id");
+        $statement->bindParam(":id", $comment);
+        $statement->execute();
+    }
 }
