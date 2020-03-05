@@ -1,16 +1,25 @@
 <?php
 
-
 namespace App\Entity;
 
-
-class Comment
+class Comment implements \JsonSerializable
 {
     private $id;
     private $name;
     private $email;
     private $comment;
     private $approved;
+
+    public function jsonSerialize()
+    {
+        return [
+            'id'        => $this->id,
+            'name'      => $this->name,
+            'email'     => $this->email,
+            'comment'   => $this->comment,
+            'approved'  => $this->approved
+        ];
+    }
 
     public function getName()
     {
@@ -61,5 +70,4 @@ class Comment
     {
         $this->id = $id;
     }
-
 }
