@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fc04512-0eba-4129-80a1-98e17ae53963" name="Default Changelist" comment="comment repository get all">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Repository/CommentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Citrus\core\Service" />
       <recent name="C:\xampp\htdocs\Citrus\public\css" />
     </key>
   </component>
@@ -213,7 +212,112 @@
       <option name="project" value="LOCAL" />
       <updated>1583403411995</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="comment repository store">
+      <created>1583421309941</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421309941</updated>
+    </task>
+    <task id="LOCAL-00022" summary="form action and method">
+      <created>1583421349551</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421349551</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor form">
+      <created>1583421378691</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421378691</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add comment service">
+      <created>1583421663131</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421663131</updated>
+    </task>
+    <task id="LOCAL-00025" summary="approve comment service">
+      <created>1583421695581</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421695581</updated>
+    </task>
+    <task id="LOCAL-00026" summary="split logic from html">
+      <created>1583425332791</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1583425332791</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor">
+      <created>1583433991555</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1583433991555</updated>
+    </task>
+    <task id="LOCAL-00028" summary="implements jsonSerialize">
+      <created>1583439538578</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1583439538578</updated>
+    </task>
+    <task id="LOCAL-00029" summary="implements JsonSerializable for products">
+      <created>1583440215580</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440215580</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added exceptions">
+      <created>1583440259769</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440259769</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor html">
+      <created>1583440315686</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440315686</updated>
+    </task>
+    <task id="LOCAL-00032" summary="styled pages">
+      <created>1583440339291</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440339291</updated>
+    </task>
+    <task id="LOCAL-00033" summary="redirect after insert">
+      <created>1583440387741</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440387741</updated>
+    </task>
+    <task id="LOCAL-00034" summary="json encode unapproved comments">
+      <created>1583440455297</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440455297</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ajax approve comments">
+      <created>1583440497561</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1583440497561</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,14 +337,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add gitignore" />
-    <MESSAGE value="added images and css" />
-    <MESSAGE value="added home view and admin view" />
-    <MESSAGE value="database singleton" />
-    <MESSAGE value="abstract repository" />
-    <MESSAGE value="repository interface" />
-    <MESSAGE value="refactor database class" />
-    <MESSAGE value="showed all products" />
     <MESSAGE value="comment and product entities" />
     <MESSAGE value="comment and product repositories" />
     <MESSAGE value="refactor style" />
@@ -250,8 +346,22 @@
     <MESSAGE value="switch pages" />
     <MESSAGE value="admin page show comments" />
     <MESSAGE value="home page show comments and admin link" />
-    <MESSAGE value="styled pages" />
     <MESSAGE value="changed get comments query" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed get comments query" />
+    <MESSAGE value="comment repository store" />
+    <MESSAGE value="form action and method" />
+    <MESSAGE value="refactor form" />
+    <MESSAGE value="add comment service" />
+    <MESSAGE value="approve comment service" />
+    <MESSAGE value="split logic from html" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="implements jsonSerialize" />
+    <MESSAGE value="implements JsonSerializable for products" />
+    <MESSAGE value="added exceptions" />
+    <MESSAGE value="refactor html" />
+    <MESSAGE value="styled pages" />
+    <MESSAGE value="redirect after insert" />
+    <MESSAGE value="json encode unapproved comments" />
+    <MESSAGE value="ajax approve comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax approve comments" />
   </component>
 </project>
