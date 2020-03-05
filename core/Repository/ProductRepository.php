@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Repository;
 
 use App\Database\Database;
@@ -13,10 +12,17 @@ class ProductRepository implements RepositoryInterface
 
     public function get()
     {
-        $connection = Database::getInstance();
-        $connection = $connection->getConnection();
-        $statement = $connection->query("SELECT * FROM $this->table JOIN images ON $this->table.id = images.product_id");
-        $products = $statement->fetchAll(PDO::FETCH_CLASS, Product::class);
-        return $products;
+        try
+        {
+            $connection = Database::getInstance();
+            $connection = $connection->getConnection();
+            $statement = $connection->query("SELECT * FROM $this->table JOIN images ON $this->table.id = images.product_id");
+            $products = $statement->fetchAll(PDO::FETCH_CLASS, Product::class);
+            return $products;
+        }
+        catch (\Exception $e)
+        {
+            echo $e->getMessage();
+        }
     }
 }
