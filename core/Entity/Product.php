@@ -1,15 +1,25 @@
 <?php
 
-
 namespace App\Entity;
 
-class Product
+class Product implements \JsonSerializable
 {
     private $id;
     private $product;
     private $description;
     private $src;
     private $alt;
+
+    public function jsonSerialize()
+    {
+        return [
+            'id'          => $this->id,
+            'product'     => $this->product,
+            'description' => $this->description,
+            'src'         => $this->src,
+            'alt'         => $this->alt
+        ];
+    }
 
     public function getProduct()
     {
