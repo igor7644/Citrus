@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Service;
+
 use App\Entity\Comment;
 use App\Repository\CommentRepository;
 
