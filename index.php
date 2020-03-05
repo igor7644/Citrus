@@ -7,14 +7,14 @@ if(isset($_GET['page']))
     switch($_GET['page'])
     {
         case 'admin':
-            include 'views/admin.php';
+            include 'views/logic/show_admin.php';
             break;
         default:
-            include 'views/home.php';
+            include 'views/logic/show_home.php';
             break;
     }
 }
 else
 {
-    include 'views/home.php';
+    include 'views/logic/show_home.php';
 }
