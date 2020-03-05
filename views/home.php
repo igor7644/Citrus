@@ -25,6 +25,7 @@
 
     <div class="row comments">
         <div class="col-md-8 offset-md-2">
+            <h2>COMMENTS</h2>
             <?php
             /** @var Comment $comment */
             foreach($comments as $comment): ?>

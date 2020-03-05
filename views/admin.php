@@ -11,17 +11,15 @@
         </div>
     </div>
 
-    <div class="row admin">
+    <div class="row admin unapproved-comments">
 
         <?php
         /** @var Comment $comment */
         foreach($comments as $comment): ?>
             <div class="col-md-8 offset-md-2 admin-comments">
                 <p><b><?= $comment->getName() ?>:</b> <?= $comment->getComment() ?></p>
-                <form action="core/Service/approve_comment.php" method="post">
-                    <input type="hidden" name="commentId" value="<?= $comment->getId() ?>">
-                    <button type="submit" class="btn btn-success">Approve</button>
-                </form>
+                    <button type="button" class="btn btn-success approve" data-id="<?= $comment->getId()
+                    ?>">Approve</button>
             </div> <hr>
         <?php endforeach; ?>
 
